@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+.firstHeader, .secondHeader{
+    height: 100px;
+    background-color: rgb(150, 150, 150);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstHeaderInside{
+    width: 40%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.fontFamilyCon, .fontSizeCon{
+    display: none;
+    width: 10%;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+    position: absolute;
+    top: 65px;
+    left: 852px;
+}
+.fontFamilyCon p, .fontSizeCon p{
+    padding: 5px;
+    cursor: pointer;
+}
+.fontFamilyCon p:hover, .fontSizeCon p:hover{
+    background-color: rgb(95, 95, 255);
+}
+.btnCon, .secondHeaderInside{
+    display: flex;
+    
+}
+.editBtn, .lockBtn{
+    border-radius: 3px;
+}
+.boldBtn, .alignLeftBtn, .fontFamilyBtn, .saveBtn{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.linethroughBtn, .alignRightBtn, .imageBtn, .ulBtn{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.iconCon{
+    width: 35px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.iconCon:hover{
+    cursor: pointer;
+    background-color: rgb(195,195,195);
+}
+.text{
+    margin: 10px;
+    font-size: 20px;
+}
+.textCon{
+    display: flex;
+    height: 654px;
+}
+.shadowCon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    display: none;
+}
+.textColorTable{
+    width: 520px;
+    height: 275px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 45px auto;
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.textColorHeader{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    border-bottom: 1px solid black;
+}
+.textColorHeaderLeft{
+    width: 160px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 18px;
+}
+.textColorHeaderRight{
+    width: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.fa-times{
+    cursor: pointer;
+}
+.textColorFooter{
+    display: flex;
+    justify-content: center;
+}
+.textColorFooterCon{
+    width: 490px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 10px 0;
+}
+.block{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+.backgroundColorTable{
+    width: 520px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 45px auto;
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.backgroundColorHeader{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+.backgroundColorHeaderLeft{
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 18px;
+}
+.backgroundColorHeaderRight{
+    width: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.backgroundColorTableBtns{
+    height: 30px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.btns{
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    color: blue;
+    margin-left: 20px;
+}
+.btns:hover{
+    cursor: pointer;
+    color: black;
+}
+.backgroundColorFooter{
+        display: flex;
+        justify-content: center;
+}
+.backgroundColorFooterCon{
+    width: 490px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 10px 0;
+    display: none;
+}
+.block1{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+.imageBoxCon{
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+    display: none;
+}
+.image{
+    width: 120px;
+    height: 70px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+img{
+    width: 120px;
+    height: 70px;
+    border-radius: 5px;
+}
+.chooseFileCon{
+    margin-top: 10px;
+    display: none;
+}
+.signInTable{
+    width: 520px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 45px auto;
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.signInheader{
+    height: 50px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.signInInp{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.signInInpCon{
+    width: 400px;
+}
+.loginInp, .passwordInp{
+    width: 400px;
+    height: 30px;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 5px;
+}
+.passwordInp{
+    margin-top: 10px;
+}
+.emptyValWarning1, .emptyValWarning2{
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+input::placeholder{
+    padding: 10px;
+}
+.signInBtn{
+    width: 400px;
+    height: 30px;
+    border: 1px solid rgb(177, 177, 177);
+    background-color: rgb(177, 177, 177);
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+}
+#editTextarea{
+    width: 100%;
+    height: 650px;
+    border: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.createTableTable{
+    margin: 50px auto;
+    width: 700px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: none;
+}
+.createTableHeader{
+    height: 50px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.createTableHeaderLeft{
+    width: 120px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.createTableHeaderRight{
+    width: 25px;
+    display: flex;
+    justify-content: flex-start;
+}
+.createTableInpCon{
+    display: flex;
+}
+.createTableInpLeftCon, .createTableInpRightCon{
+    width: 45%;
+}
+h3{
+    font-weight: normal;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tableInp{
+    width: 300px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.countTRCon, .widthTDCon, .borderWidthCon{
+    margin: 10px 0 0 30px;
+}
+.countTDCon, .heightTDCon, .selectTableCon{
+    margin: 10px 0 0 50px;
+}
+.selectTableCon{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+#borderStyleSel, #borderColorSel{
+    width: 130px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.invalidVal{
+    font-size: 14px;
+    color: red;
+    margin: 10px 0 0 30px;
+    display: none;
+}
+.tableResetCreateBtnsCon{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+.resetBtn, .createBtn{
+    width: 320px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+.resetBtn, .resetOLBtn, .resetULBtn{
+    background-color: rgb(255, 74, 74);
+}
+.createBtn, .createOLBtn, .createULBtn{
+    background-color: rgb(66, 172, 66);
+}
+.olTable, .ulTable{
+    margin: 50px auto;
+    width: 400px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+.olTableHeader, .ulTableHeader{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.olTableHeaderLeft, .ulTableHeaderLeft{
+    width: 110px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+}
+.olTableHeaderRight, .ulTableHeaderRight{
+    width: 25px;
+    display: flex;
+    justify-content: flex-start;
+}
+.countLICon, .listMarkCon{
+    margin: 10px 0 0 30px;
+}
+.countLIInp, #markSelect, .countLIInp1, #markSelectUL{
+    width: 340px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.invalidValOL, .invalidValUL{
+    font-size: 14px;
+    color: red;
+    margin: 10px 0 0 30px;
+    display: none;
+}
+.btnsOLCon, .btnsULCon{
+    padding: 10px 0 10px 0;
+}
+.resetOLBtn, .createOLBtn, .resetULBtn, .createULBtn{
+    width: 170px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+.resetOLBtn, .resetULBtn{
+    margin-left: 30px;
+}
+.editContainer{
+    display: none;
+}
+.selectWraper{
+    font-family: FontAwesome;
+    content: '\f107'
+}
